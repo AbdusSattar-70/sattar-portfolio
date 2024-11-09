@@ -55,11 +55,10 @@ Together, these pages offer a comprehensive glimpse into my professional identit
   <summary>Client</summary>
   <b>This project only works client side right now.</b>
   <ul>
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>JS</li>
-    <li>React</li>
-    <li>Bootstrap</li>
+    <li>Nextjs</li>
+    <li>Tailwindcss</li>
+    <li>Shadcn/ui</li>
+    <li>Framer Motion</li>
   </ul>
 </details>
 <details>
