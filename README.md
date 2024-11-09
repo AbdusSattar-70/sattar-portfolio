@@ -1,36 +1,213 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<a name="readme-top"></a>
 
-## Getting Started
+<div align="center">
+ <h3><b>Portfolio-Refined
+</b>.
+ </h3>
+</div>
 
-First, run the development server:
+<div align="center">
+<h3><b>Screenshot</b></h3>
+<img src="./src/assets/screen.png" alt="" width="500px">
+</div>
+
+<!-- TABLE OF CONTENTS -->
+
+# 📗 Table of Contents
+
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#triangular_flag_on_post-deployment)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [📝 License](#license)
+
+<!-- PROJECT DESCRIPTION -->
+
+## 📖 Portfolio-Refined <a name="about-project"></a>
+
+In this portfolio project, I've curated a captivating showcase of my achievements across four dynamic pages: Home, About, Contact, and Projects. Each page offers a unique perspective:
+
+1. **Home**: A welcoming introduction to my portfolio's essence.
+2. **About**: Deep insights into my journey, experiences, and passions.
+3. **Contact**: A direct way to connect and engage with me.
+4. **Projects**: A showcase of my technical prowess and achievements.
+
+Together, these pages offer a comprehensive glimpse into my professional identity and expertise.
+
+## 🛠 Built With <a name="built-with"></a>
+
+## Tech Stack <a name="tech-stack"></a>
+
+<details>
+  <summary>Client</summary>
+  <b>This project only works client side right now.</b>
+  <ul>
+    <li>Nextjs</li>
+    <li>Tailwindcss</li>
+    <li>Shadcn/ui</li>
+    <li>Framer Motion</li>
+  </ul>
+</details>
+<details>
+  <summary>Server</summary>
+  <ul>
+    <li><a href=#>Server - It is Hosted on Netily</a></li>
+  </ul>
+</details>
+
+<details>
+<summary>Database</summary>
+  <ul>
+    <li>Currently it doesn't use database</li>
+  </ul>
+</details>
+
+<!-- Features -->
+
+## Key Features <a name="key-features"></a>
+
+- **Showcase developer achievements**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://abdussattar-70.github.io/Portfolio-Refined)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+To get a local copy up and running, follow these steps.
+
+## Prerequisites <a name="prerequisites"></a>
+
+- In order to run this project you need:
+
+### It would be best if you had some familiarity with `HTML`, `CSS`,`JS`, `React` and `Bootstrap`.
+
+- A Computer (MAC or PC)
+- code editor (VSCode,Atom etc...)
+- A browser (Chrome,Mozilla,Safari etc...)
+- Version Control System (Git and Github)
+
+# Setup <a name="setup"></a>
+
+Clone this repository to your desired folder:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+       git clone https://github.com/AbdusSattar-70/Portfolio-Refined.git
+       cd Portfolio-Refined
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Install <a name="install"></a>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Install this project with:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+     npm install
+```
 
-## Learn More
+# Run tests and check errors <a name="run-tests"></a>
 
-To learn more about Next.js, take a look at the following resources:
+To run tests and check errors, run the following command:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- To check Styelint error:-
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+   npx stylelint "\*_/_.{css,scss}"
+```
 
-## Deploy on Vercel
+- To check Eslint error:-
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+  npx eslint "**/*.{js,jsx}"
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# Deployment <a name="triangular_flag_on_post-deployment"></a>
+
+You can deploy this project using:
+
+- Render Hosting server or GitHub pages
+
+```bash
+   npm install
+   npm run start
+```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- AUTHORS -->
+
+## 👥 Authors <a name="authors"></a>
+
+## 👤 Abdus Sattar
+
+- GitHub: [AbdusSattar-70](https://github.com/AbdusSattar-70)
+- Twitter: [Abdus Sattar](https://twitter.com/Abdus_Sattar70)
+- LinkedIn: [Abdus Sattar](https://www.linkedin.com/in/abdus-sattar-a41a26215/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- **Web Responsiveness for all users**
+- **Add web accessibility**
+- **Add Login page**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Everybody is welcome to suggest, changes,Contributions, issues, and feature request in this project.
+
+In order to do it, fork this repository, create a new branch and open a Pull Request from your branch.
+
+Feel free to check the [issues page](../../issues/).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+If you like this project, Please give me ⭐️ and you can use it following [MIT](./LICENSE) license.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to thank microverse for the opportunity to learn how to Code.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is under [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
