@@ -1,3 +1,5 @@
+"use client";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "@/public/logo.webp";
@@ -6,22 +8,49 @@ import { ModeToggle } from "./ui/mode-toggle";
 import MobileNav from "./MobileNav";
 
 const Header = () => {
+  const [showHeader, setShowHeader] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      // Show header if scrolling up, hide if scrolling down
+      if (currentScrollY > lastScrollY && currentScrollY > 50) {
+        setShowHeader(false);
+      } else {
+        setShowHeader(true);
+      }
+
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up event listener on unmount
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [lastScrollY]);
+
   return (
-    <header className="py-8 xl:py-12 text-slate-950  dark:text-white">
-      <div className="container mx-auto flex justify-between items-center">
+    <header
+      className={`fixed top-0 w-full h-16 transition-transform duration-300 z-50 ${
+        showHeader ? "translate-y-0" : "-translate-y-full"
+      } bg-white dark:bg-background shadow-md`}
+    >
+      <div className="max-w-7xl mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8 py-4">
         {/* Logo */}
-        <Link href="/" className="flex items-center space-x-2">
+        <Link href="/">
           <Image src={Logo} alt="Logo" className="w-6 h-6" />
-          <h1 className="text-2xl font-semibold">Sattar</h1>
         </Link>
 
-        {/* desktop nav and mode toggler*/}
+        {/* Desktop navigation and mode toggler */}
         <div className="hidden md:flex items-center gap-4">
           <Nav />
           <ModeToggle />
         </div>
-        {/* Mobile nav */}
-        <div className="md:hidden ">
+
+        {/* Mobile navigation */}
+        <div className="md:hidden">
           <MobileNav />
         </div>
       </div>

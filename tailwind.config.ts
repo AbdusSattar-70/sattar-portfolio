@@ -11,7 +11,10 @@ export default {
   theme: {
     container: {
       center: true,
-      padding: "0.8rem",
+      padding: "0.5rem",
+    },
+    fontFamily: {
+      primary: "var(--font-montserrat)",
     },
     extend: {
       colors: {
