@@ -5,7 +5,6 @@ import "./globals.css";
 // components
 import { ThemeProvider } from "@/components/theme-provider";
 import Header from "@/components/Header";
-import PageTransition from "@/components/PageTransition";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -32,9 +31,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Header />
-          <div className="mt-16">
-            <PageTransition>{children}</PageTransition>
-          </div>
+          <div className="mt-16">{children}</div>
         </ThemeProvider>
       </body>
     </html>
