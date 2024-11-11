@@ -23,14 +23,13 @@ export function MobileNav() {
           <LucideLayoutGrid />
         </Button>
       </SheetTrigger>
-      <SheetContent className="w-52">
+      <SheetContent className="w-52 text-blue-400">
         <SheetHeader>
           {/* Logo */}
           <SheetTitle>
             <SheetClose asChild>
-              <Link href="/" className="flex items-center space-x-2">
+              <Link href="/" className="text-blue-400">
                 <Image src={Logo} alt="Logo" className="w-6 h-6" />
-                <h1 className="text-2xl font-semibold">Sattar</h1>
               </Link>
             </SheetClose>
           </SheetTitle>
@@ -40,7 +39,7 @@ export function MobileNav() {
           {NAVLINKS.map(({ name, path, icon }) => {
             return (
               <SheetClose key={name} asChild>
-                <Link href={path} className="font-bold hover:text-blue-500">
+                <Link href={path} className="font-bold hover:text-slate-400">
                   <div className="flex gap-2">
                     <span>{icon}</span>
                     {name}

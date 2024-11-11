@@ -3,27 +3,27 @@ import { LucideHome } from "lucide-react";
 export const NAVLINKS = [
   {
     name: "Home",
-    path: "/",
+    path: "#home",
     icon: <LucideHome />,
   },
   {
-    name: "Services",
-    path: "/services",
+    name: "About",
+    path: "#about",
     icon: <LucideHome />,
   },
   {
-    name: "Resume",
-    path: "/resume",
+    name: "Experience",
+    path: "#experience",
     icon: <LucideHome />,
   },
   {
     name: "Work",
-    path: "/work",
+    path: "#work",
     icon: <LucideHome />,
   },
   {
     name: "Contact",
-    path: "/contact",
+    path: "#contact",
     icon: <LucideHome />,
   },
 ];
