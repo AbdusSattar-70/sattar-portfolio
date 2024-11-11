@@ -1,6 +1,6 @@
-import p1 from "@/public/p1.jpg";
-import p2 from "@/public/p1.jpg";
-import p3 from "@/public/p1.jpg";
+import p1 from "@/public/p1.png";
+import p2 from "@/public/p2.png";
+import p3 from "@/public/p3.png";
 export const FEATURE_PROJECT_DATA = [
   {
     title: "Mingle Mate",
