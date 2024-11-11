@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import Logo from "@/public/logo.webp";
 import Nav from "./Nav";
-import { ModeToggle } from "./ui/mode-toggle";
 import MobileNav from "./MobileNav";
 
 const Header = () => {
@@ -37,16 +36,15 @@ const Header = () => {
         showHeader ? "translate-y-0" : "-translate-y-full"
       } bg-white dark:bg-background shadow-md`}
     >
-      <div className="max-w-7xl mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8 py-4">
+      <div className="flex justify-between items-center px-4 sm:px-6 lg:px-8 py-4">
         {/* Logo */}
         <Link href="/">
           <Image src={Logo} alt="Logo" className="w-6 h-6" />
         </Link>
 
         {/* Desktop navigation and mode toggler */}
-        <div className="hidden md:flex items-center gap-4">
+        <div className="hidden md:flex">
           <Nav />
-          <ModeToggle />
         </div>
 
         {/* Mobile navigation */}

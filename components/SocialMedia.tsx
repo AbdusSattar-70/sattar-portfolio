@@ -1,15 +1,29 @@
-// components/SocialMedia.tsx
+// components/AppSidebar.tsx
+"use client";
 
-import React from "react";
+import * as React from "react";
+import Link from "next/link";
+import { ModeToggle } from "./ui/mode-toggle";
 import {
   FaFacebookF,
   FaGithub,
-  FaTwitter,
   FaLinkedinIn,
   FaRegEnvelope,
 } from "react-icons/fa6";
+import { SiAwwwards } from "react-icons/si";
 import TooltipWrapper from "./ui/TooltipWrapper";
 
+import {
+  Sidebar,
+  SidebarContent,
+  SidebarGroup,
+  SidebarGroupContent,
+  SidebarMenu,
+  SidebarMenuButton,
+  SidebarMenuItem,
+} from "@/components/ui/sidebar";
+
+// Define social media links here
 const socialMediaLinks = [
   {
     href: "https://web.facebook.com/abdus.sattar.70/",
@@ -26,10 +40,10 @@ const socialMediaLinks = [
     hoverColor: "hover:text-blue-700",
   },
   {
-    href: "https://twitter.com/Abdus_Sattar70",
-    tooltip: "Say Hello On Twitter",
-    ariaLabel: "Visit my Twitter profile",
-    icon: <FaTwitter size={24} />,
+    href: "https://outlinerz.com",
+    tooltip: "Take a tour on my website",
+    ariaLabel: "Visit my website",
+    icon: <SiAwwwards size={24} />,
     hoverColor: "hover:text-blue-400",
   },
   {
@@ -48,24 +62,47 @@ const socialMediaLinks = [
   },
 ];
 
-const SocialMedia: React.FC = () => {
+export function SocialMedia({
+  ...props
+}: React.ComponentProps<typeof Sidebar>) {
   return (
-    <div className="flex space-x-4 mt-6">
-      {socialMediaLinks.map((link, index) => (
-        <TooltipWrapper key={index} content={link.tooltip}>
-          <a
-            href={link.href}
-            target={link.href.startsWith("http") ? "_blank" : undefined}
-            rel="noopener noreferrer"
-            aria-label={link.ariaLabel}
-            className={`text-blue-600 ${link.hoverColor} transition-colors`}
-          >
-            {link.icon}
-          </a>
-        </TooltipWrapper>
-      ))}
-    </div>
+    <Sidebar
+      collapsible="icon"
+      {...props}
+      className="border-none"
+      style={{ border: "none" }}
+    >
+      <SidebarContent className="h-full flex flex-col justify-center items-center bg-background">
+        <SidebarGroup>
+          <SidebarGroupContent>
+            <SidebarMenu>
+              {/* Centered Social Media Icons and  Toggle Theme*/}
+              <div className="flex flex-col space-y-4 mt-4 text-blue-500">
+                <ModeToggle />
+                {socialMediaLinks.map((link, index) => (
+                  <SidebarMenuItem key={index}>
+                    <TooltipWrapper content={link.tooltip}>
+                      <SidebarMenuButton asChild>
+                        <Link
+                          href={link.href}
+                          target={
+                            link.href.startsWith("http") ? "_blank" : undefined
+                          }
+                          rel="noopener noreferrer"
+                          aria-label={link.ariaLabel}
+                          className={`text-blue-600 ${link.hoverColor} transition-colors`}
+                        >
+                          {link.icon}
+                        </Link>
+                      </SidebarMenuButton>
+                    </TooltipWrapper>
+                  </SidebarMenuItem>
+                ))}
+              </div>
+            </SidebarMenu>
+          </SidebarGroupContent>
+        </SidebarGroup>
+      </SidebarContent>
+    </Sidebar>
   );
-};
-
-export default SocialMedia;
+}

@@ -28,12 +28,8 @@ export function MobileNav() {
           {/* Logo */}
           <SheetTitle>
             <SheetClose asChild>
-              <Link
-                href="/"
-                className="flex items-center space-x-2 text-blue-400"
-              >
+              <Link href="/" className="text-blue-400">
                 <Image src={Logo} alt="Logo" className="w-6 h-6" />
-                <h1 className="text-2xl font-semibold">Sattar</h1>
               </Link>
             </SheetClose>
           </SheetTitle>
