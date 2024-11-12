@@ -3,7 +3,6 @@ import { Montserrat } from "next/font/google";
 import "./globals.css";
 
 // components
-import { ThemeProvider } from "@/components/theme-provider";
 import Header from "@/components/Header";
 
 const montserrat = Montserrat({
@@ -22,17 +21,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark">
       <body className={`${montserrat.variable} antialiased`}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <Header />
-          <div className="mt-16">{children}</div>
-        </ThemeProvider>
+        <Header />
+        <div className="mt-16">{children}</div>
       </body>
     </html>
   );

@@ -5,7 +5,7 @@ export const FEATURE_PROJECT_DATA = [
   {
     title: "Mingle Mate",
     description:
-      "lorem Over 500+ professionally designed, fully responsive, expertly crafted component examples you can drop into your Tailwind projects and customize to your heart’s content.",
+      "lorem Over 500+ professionally designed, fully responsive, expertly",
     technologies: ["VS Code", "Sublime Text", "Atom", "iTerm2", "Hyper"],
     imageSrc: p1,
     links: [
@@ -21,7 +21,7 @@ export const FEATURE_PROJECT_DATA = [
   {
     title: "Project Two",
     description:
-      "lorem Over 500+ professionally designed, fully responsive, expertly crafted component examples you can drop into your Tailwind projects and customize to your heart’s content.",
+      "lorem Over 500+ professionally designed, fully responsive, expertly",
     technologies: ["VS Code", "Sublime Text", "Atom"],
     imageSrc: p2,
     links: [
@@ -35,7 +35,7 @@ export const FEATURE_PROJECT_DATA = [
   {
     title: "Project Three",
     description:
-      "lorem Over 500+ professionally designed, fully responsive, expertly crafted component examples you can drop into your Tailwind projects and customize to your heart’s content.",
+      "lorem Over 500+ professionally designed, fully responsive, expertly",
     technologies: ["VS Code", "Atom", "Hyper"],
     imageSrc: p3,
     links: [
