@@ -5,42 +5,34 @@ export const FEATURE_PROJECT_DATA = [
   {
     title: "Mingle Mate",
     description:
-      "lorem Over 500+ professionally designed, fully responsive, expertly",
+      "lorem Over 500+ professionally lorem Over 500+ professionally designed, fully responsive, expertly designed, fully responsive, expertly",
     technologies: ["VS Code", "Sublime Text", "Atom", "iTerm2", "Hyper"],
     imageSrc: p1,
-    links: [
-      {
-        label: "Visual Studio Marketplace",
-        href: "https://marketplace.visualstudio.com/",
-      },
-      { label: "Package Control", href: "https://packagecontrol.io/" },
-      { label: "Atom Package Manager", href: "https://atom.io/packages" },
-      { label: "npm", href: "https://www.npmjs.com/" },
-    ],
+    links: {
+      github: "https://github.com/AbdusSattar-70/sattar-portfolio",
+      live: "https://github.com/AbdusSattar-70/sattar-portfolio",
+    },
   },
   {
     title: "Project Two",
     description:
-      "lorem Over 500+ professionally designed, fully responsive, expertly",
+      "lorem Over 500+ professionally lorem Over 500+ professionally designed, fully responsive, expertly designed, fully responsive, expertly",
     technologies: ["VS Code", "Sublime Text", "Atom"],
     imageSrc: p2,
-    links: [
-      { label: "GitHub", href: "https://github.com/" },
-      {
-        label: "Visual Studio Marketplace",
-        href: "https://marketplace.visualstudio.com/",
-      },
-    ],
+    links: {
+      github: "https://github.com/AbdusSattar-70/sattar-portfolio",
+      live: "https://github.com/AbdusSattar-70/sattar-portfolio",
+    },
   },
   {
     title: "Project Three",
     description:
-      "lorem Over 500+ professionally designed, fully responsive, expertly",
+      "lorem Over 500+ professionally designed, lorem Over 500+ professionally designed, fully responsive, expertly fully responsive, expertly",
     technologies: ["VS Code", "Atom", "Hyper"],
     imageSrc: p3,
-    links: [
-      { label: "npm", href: "https://www.npmjs.com/" },
-      { label: "Package Control", href: "https://packagecontrol.io/" },
-    ],
+    links: {
+      github: "https://github.com/AbdusSattar-70/sattar-portfolio",
+      live: "https://github.com/AbdusSattar-70/sattar-portfolio",
+    },
   },
 ];

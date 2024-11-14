@@ -32,7 +32,7 @@ const JobPanel: FC<JobPanelProps> = ({ job, isActive }) => (
     <p className="text-slate-300">{job.duration}</p>
     <ul className="mt-4 list-disc list-inside space-y-2">
       {job.responsibilities.map((task, i) => (
-        <li key={i} className="text-slate-400 text-sm">
+        <li key={i} className="text-slate-400">
           {task}
         </li>
       ))}

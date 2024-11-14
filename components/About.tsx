@@ -7,15 +7,15 @@ export default function About() {
     <section id="about" className="py-12 bg-background">
       <div
         className="container mx-auto p-6"
-        style={{
-          visibility: "visible",
-          opacity: 1,
-          transform: "translateY(0)",
-          transition: "all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1)",
-        }}
+        // style={{
+        //   visibility: "visible",
+        //   opacity: 1,
+        //   transform: "translateY(0)",
+        //   transition: "all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1)",
+        // }}
       >
         {/* Heading */}
-        <h2 className="text-3xl sm:text-4xl font-semibold text-slate-300 mb-4">
+        <h2 className="text-2xl font-semibold text-slate-300 mb-4">
           <span className="font-bold mr-2">About Me</span>
         </h2>
 
@@ -25,7 +25,7 @@ export default function About() {
         {/* Main Content */}
         <div className="flex flex-col lg:flex-row items-center gap-8">
           {/* Text Content */}
-          <div className="text-lg leading-relaxed text-slate-400 lg:w-2/3">
+          <div className="leading-relaxed text-slate-400 lg:w-2/3">
             <p>
               Hello! My name is Abdus Sattar, and I enjoy creating things that
               live on the internet. My interest in web development started back

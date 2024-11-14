@@ -10,7 +10,7 @@ export type Job = {
 export const jobs: Job[] = [
   {
     title: "Lead Engineer",
-    company: "XYZ",
+    company: "Deliver high-quality",
     companyUrl: "https://www.XYZ.com/",
     duration: "May 2018 - Present",
     responsibilities: [
@@ -22,7 +22,7 @@ export const jobs: Job[] = [
   },
   {
     title: "Software Engineer",
-    company: "XYZ",
+    company: "Deliver high-quality",
     companyUrl: "https://www.XYZ.com/",
     duration: "May 2018 - Present",
     responsibilities: [
@@ -34,7 +34,7 @@ export const jobs: Job[] = [
   },
   {
     title: "Lead3 Engineer",
-    company: "XYZ",
+    company: "Deliver high-quality",
     companyUrl: "https://www.XYZ.com/",
     duration: "May 2018 - Present",
     responsibilities: [
@@ -46,7 +46,7 @@ export const jobs: Job[] = [
   },
   {
     title: " Engineer2",
-    company: "XYZ",
+    company: "Deliver high-quality",
     companyUrl: "https://www.XYZ.com/",
     duration: "May 2018 - Present",
     responsibilities: [

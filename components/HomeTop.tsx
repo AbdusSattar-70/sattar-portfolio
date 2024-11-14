@@ -11,16 +11,14 @@ const HomeTop = () => {
             Abdus Sattar
           </h2>
 
-          <p className="text-4xl sm:text-3xl md:text-4xl lg:text-5xl mt-2 text-slate-400">
+          <h3 className="text-4xl sm:text-3xl md:text-4xl lg:text-5xl mt-2 text-slate-400">
             I build things for the web.
-          </p>
-          <p className="text-md sm:text-lg md:text-xl mt-2 text-slate-500">
+          </h3>
+          <p className="mt-2 text-slate-400">
             I am a full-stack software developer with a strong focus on creating
-            scalable web applications.
-          </p>
-          <p className="text-sm sm:text-base md:text-lg lg:text-xl mt-1 text-slate-500">
-            I can help you develop a product, feature, or website. Browse{" "}
-            <a href="#work" className="text-blue-600 underline">
+            scalable web applications. I can help you develop a product,
+            feature, or website. Browse{" "}
+            <a href="#work" className="text-blue-500 underline">
               some of my work
             </a>{" "}
             and see my experience! If you like what you see and have a project
