@@ -20,7 +20,7 @@ const stats = [
 ];
 const Stats = () => {
   return (
-    <section className="text-slate-500 dark:text-slate-300 py-6 xl:py-2">
+    <section className="text-slate-400 py-6 xl:py-2">
       <div className="relative group p-4 rounded-lg overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[#4244461c] to-[#5f618534] opacity-1 transition-opacity duration-300"></div>
         <div className="relative">
@@ -32,7 +32,7 @@ const Stats = () => {
                     end={stat.num}
                     duration={5}
                     delay={2}
-                    className="text-4xl md:text-6xl font-extrabold"
+                    className="text-4xl md:text-6xl font-semibold"
                   />
                   <p
                     className={`${
