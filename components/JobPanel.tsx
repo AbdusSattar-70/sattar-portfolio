@@ -12,11 +12,11 @@ const JobPanel: FC<JobPanelProps> = ({ job, isActive }) => (
     id={`panel-${job.company}`}
     aria-labelledby={`tab-${job.company}`}
     hidden={!isActive}
-    className="transition-opacity duration-300 ease-in-out"
+    className="bg-background transition-opacity duration-300 ease-in-out"
   >
-    <h3 className="text-xl font-semibold">
+    <h3 className="text-xl font-semibold text-slate-200">
       <span>{job.title}</span>
-      <span className="text-teal-500">
+      <span className="text-blue-400">
         {" "}
         @{" "}
         <a
@@ -29,10 +29,10 @@ const JobPanel: FC<JobPanelProps> = ({ job, isActive }) => (
         </a>
       </span>
     </h3>
-    <p className="text-gray-500">{job.duration}</p>
+    <p className="text-slate-300">{job.duration}</p>
     <ul className="mt-4 list-disc list-inside space-y-2">
       {job.responsibilities.map((task, i) => (
-        <li key={i} className="text-gray-700">
+        <li key={i} className="text-slate-400 text-sm">
           {task}
         </li>
       ))}

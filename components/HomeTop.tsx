@@ -20,7 +20,7 @@ const HomeTop = () => {
           </p>
           <p className="text-sm sm:text-base md:text-lg lg:text-xl mt-1 text-slate-500">
             I can help you develop a product, feature, or website. Browse{" "}
-            <a href="#project" className="text-blue-600 underline">
+            <a href="#work" className="text-blue-600 underline">
               some of my work
             </a>{" "}
             and see my experience! If you like what you see and have a project

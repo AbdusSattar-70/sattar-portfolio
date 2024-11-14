@@ -11,7 +11,7 @@ const JobTabs: FC<JobTabsProps> = ({ jobs, activeTab, onTabClick }) => (
   <div
     role="tablist"
     aria-label="Job tabs"
-    className="flex flex-col lg:w-1/3 border-r border-gray-300"
+    className="flex lg:flex-col w-fit h-fit border-b lg:border-l lg:border-b-transparent border-slate-800"
   >
     {jobs.map((job, index) => (
       <button
@@ -23,8 +23,8 @@ const JobTabs: FC<JobTabsProps> = ({ jobs, activeTab, onTabClick }) => (
         onClick={() => onTabClick(index)}
         className={`py-2 px-4 text-left ${
           activeTab === index
-            ? "bg-teal-500 text-white font-bold"
-            : "text-gray-600 hover:bg-gray-100"
+            ? "bg-slate-800 text-blue-400 font-bold border-b lg:border-l lg:border-b-transparent border-blue-400"
+            : "text-white hover:bg-slate-800 hover:text-blue-500"
         }`}
       >
         {job.company}
