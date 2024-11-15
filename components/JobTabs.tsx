@@ -11,7 +11,7 @@ const JobTabs: FC<JobTabsProps> = ({ jobs, activeTab, onTabClick }) => (
   <div
     role="tablist"
     aria-label="Job tabs"
-    className="flex lg:flex-col max-w-7xl h-fit border-b lg:border-l lg:border-b-transparent border-slate-800 overflow-x-auto whitespace-nowrap scroll-smooth"
+    className="flex lg:flex-col max-w-full h-fit border-b lg:border-l lg:border-b-transparent border-slate-800 overflow-x-auto whitespace-nowrap scroll-smooth"
   >
     {jobs.map((job, index) => (
       <button

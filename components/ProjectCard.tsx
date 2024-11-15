@@ -30,8 +30,9 @@ const ProjectCard: React.FC<ProjectProps> = ({
               <Image
                 src={imageSrc}
                 alt={`${title} screenshot`}
-                layout="fill"
-                objectFit="cover"
+                fill
+                placeholder="blur"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 className="rounded-lg transform transition-all duration-300 ease-in-out group-hover:translate-x-[-5px] group-hover:translate-y-[-5px] group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-blue-500 opacity-50 group-hover:opacity-0 transition-opacity duration-300 ease-in-out"></div>
