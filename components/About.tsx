@@ -64,8 +64,9 @@ export default function About() {
               <Image
                 src={photo}
                 alt="Abdus Sattar"
-                layout="fill"
-                objectFit="cover"
+                fill
+                placeholder="blur"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 className="rounded-lg transform transition-all duration-300 ease-in-out group-hover:translate-x-[-5px] group-hover:translate-y-[-5px] group-hover:scale-105"
               />
               {/* Color Overlay */}

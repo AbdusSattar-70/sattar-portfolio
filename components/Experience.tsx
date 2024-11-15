@@ -15,11 +15,13 @@ export default function Experience() {
           Where I’ve Worked
         </h2>
         <div className="flex flex-col lg:flex-row">
-          <JobTabs
-            jobs={jobs}
-            activeTab={activeTab}
-            onTabClick={setActiveTab}
-          />
+          <div className="max-w-[300px]">
+            <JobTabs
+              jobs={jobs}
+              activeTab={activeTab}
+              onTabClick={setActiveTab}
+            />
+          </div>
 
           <div className="lg:w-2/3 p-4 text-slate-300">
             {jobs.map((job, index) => (
