@@ -1,33 +1,42 @@
 "use client";
+
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { NAVLINKS } from "@/components/ui/navlinks";
-import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Nav = () => {
-  const [hash, setHash] = useState(() => window.location.hash || "#home");
+  // Initialize hash state properly for both client and server
+  const [hash, setHash] = useState(() =>
+    typeof window !== "undefined" ? window.location.hash || "#home" : "#home"
+  );
+
+  useEffect(() => {
+    // Update hash state when the hash changes
+    const handleHashChange = () => setHash(window.location.hash || "#home");
+    window.addEventListener("hashchange", handleHashChange);
+    return () => window.removeEventListener("hashchange", handleHashChange);
+  }, []);
 
   const handleClick = (path: string) => {
-    window.location.hash = path;
-    setHash(path);
+    window.location.hash = path; // Update URL hash
+    setHash(path); // Update state
   };
 
   return (
     <nav role="navigation" aria-label="Main Navigation">
-      <Tabs defaultValue={hash} aria-label="Navigation Tabs">
+      <Tabs value={hash} aria-label="Navigation Tabs">
         <TabsList>
           {NAVLINKS.map(({ name, path }) => (
-            <Link
+            <TabsTrigger
               key={name}
-              href={path}
-              onClick={() => handleClick(path)}
-              aria-label={`Navigate to ${name}`}
-              className={`font-bold hover:text-blue-500 gradient-border nav-border-hover ${
+              value={path}
+              className={`font-bold hover:text-blue-500 gradient-border ${
                 path === hash ? "nav-border-b" : ""
               }`}
+              onClick={() => handleClick(path)}
             >
-              <TabsTrigger value={path}>{name}</TabsTrigger>
-            </Link>
+              {name}
+            </TabsTrigger>
           ))}
         </TabsList>
       </Tabs>
