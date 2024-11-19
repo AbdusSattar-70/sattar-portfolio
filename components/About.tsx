@@ -5,22 +5,11 @@ import photo from "@/public/sattar_photo.jpg";
 export default function About() {
   return (
     <section id="about" className="py-12 bg-background">
-      <div
-        className="container mx-auto p-6"
-        // style={{
-        //   visibility: "visible",
-        //   opacity: 1,
-        //   transform: "translateY(0)",
-        //   transition: "all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1)",
-        // }}
-      >
+      <div className="container mx-auto p-6">
         {/* Heading */}
-        <h2 className="text-2xl font-semibold text-slate-300 mb-4">
+        <h2 className="my-gradient gradient-border nav-border-b nav-border-hover text-2xl font-semibold text-slate-300 mb-4 py-2">
           <span className="font-bold mr-2">About Me</span>
         </h2>
-
-        {/* Horizontal Line */}
-        <hr className="border-t border-gray-500 mb-8" />
 
         {/* Main Content */}
         <div className="flex flex-col lg:flex-row items-center gap-8">

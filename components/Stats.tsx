@@ -32,7 +32,7 @@ const Stats = () => {
                     end={stat.num}
                     duration={5}
                     delay={2}
-                    className="text-4xl md:text-6xl font-semibold"
+                    className="text-4xl md:text-6xl font-semibold my-gradient"
                   />
                   <p
                     className={`${

@@ -18,7 +18,10 @@ const HomeTop = () => {
             I am a full-stack software developer with a strong focus on creating
             scalable web applications. I can help you develop a product,
             feature, or website. Browse{" "}
-            <a href="#work" className="text-blue-500 underline">
+            <a
+              href="#work"
+              className="text-blue-500 gradient-border gradient-border-b"
+            >
               some of my work
             </a>{" "}
             and see my experience! If you like what you see and have a project
