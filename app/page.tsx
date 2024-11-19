@@ -4,16 +4,20 @@ import About from "@/components/About";
 import Experience from "@/components/Experience";
 import FeaturedProject from "@/components/FeaturedProject";
 import HomeTop from "@/components/HomeTop";
+import { WorthyProjects } from "@/components/WorthyProjects";
+import { ScrollProgressBar } from "@/components/ScrollProgressBar";
 
-export default async function MainPage() {
+export default function MainPage() {
   return (
     <SidebarProvider>
+      <ScrollProgressBar />
       <SocialMedia />
       <SidebarInset>
         <HomeTop />
         <About />
         <Experience />
         <FeaturedProject />
+        <WorthyProjects />
       </SidebarInset>
     </SidebarProvider>
   );

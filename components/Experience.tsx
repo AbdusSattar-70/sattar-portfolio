@@ -11,8 +11,8 @@ export default function Experience() {
   return (
     <section id="experience" className="bg-background">
       <div className="container mx-auto py-12">
-        <h2 className="text-2xl font-semibold mb-6 text-slate-300">
-          Where I’ve Worked
+        <h2 className="my-gradient gradient-border nav-border-b nav-border-hover text-2xl font-semibold text-slate-300 mb-4 py-2">
+          Roles That Shaped Me
         </h2>
         <div className="flex flex-col lg:flex-row">
           <div className="max-w-[300px]">

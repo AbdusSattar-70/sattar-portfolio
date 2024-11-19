@@ -4,6 +4,7 @@ import "./globals.css";
 
 // components
 import Header from "@/components/Header";
+import Spinner from "@/components/Spinner";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -23,8 +24,10 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body className={`${montserrat.variable} antialiased`}>
-        <Header />
-        <div className="mt-16">{children}</div>
+        <Spinner>
+          <Header />
+          <div className="mt-16">{children}</div>
+        </Spinner>
       </body>
     </html>
   );

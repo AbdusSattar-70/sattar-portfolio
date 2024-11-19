@@ -236,3 +236,13 @@
 .nav-border-hover:hover::after {
   width: 100%;
 }
+
+/* WebKit-based browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* For Firefox */
+html {
+  scrollbar-width: none;
+}

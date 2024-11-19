@@ -30,7 +30,7 @@ const Nav = () => {
             <TabsTrigger
               key={name}
               value={path}
-              className={`font-bold hover:text-blue-500 gradient-border ${
+              className={`font-bold hover:text-blue-500 gradient-border nav-border-hover ${
                 path === hash ? "nav-border-b" : ""
               }`}
               onClick={() => handleClick(path)}

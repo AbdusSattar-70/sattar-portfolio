@@ -7,12 +7,9 @@ export default function About() {
     <section id="about" className="py-12 bg-background">
       <div className="container mx-auto p-6">
         {/* Heading */}
-        <h2 className="text-2xl font-semibold text-slate-300 mb-4">
+        <h2 className="my-gradient gradient-border nav-border-b nav-border-hover text-2xl font-semibold text-slate-300 mb-4 py-2">
           <span className="font-bold mr-2">About Me</span>
         </h2>
-
-        {/* Horizontal Line */}
-        <hr className="border-t border-gray-500 mb-8" />
 
         {/* Main Content */}
         <div className="flex flex-col lg:flex-row items-center gap-8">

@@ -79,7 +79,7 @@ const ProjectCard: React.FC<ProjectProps> = ({
               {description}{" "}
             </p>
           </div>
-          <div className="absolute bottom-10 right-5 flex gap-4 pt-6">
+          <div className="absolute bottom-2 right-5 flex gap-4 pt-6">
             <a href={links.github} target="_blank" rel="noopener noreferrer">
               <PiGithubLogoThin className=" text-4xl text-slate-500 hover:text-blue-500" />
             </a>
