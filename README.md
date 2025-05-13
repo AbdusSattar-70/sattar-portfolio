@@ -1,213 +1,87 @@
-<a name="readme-top"></a>
-
 <div align="center">
- <h3><b>Portfolio-Refined
-</b>.
- </h3>
+  <img alt="Logo" src="https://raw.githubusercontent.com/bchiang7/v4/main/src/images/logo.png" width="100" />
 </div>
+<h1 align="center">
+  brittanychiang.com - v4
+</h1>
+<p align="center">
+  The fourth iteration of <a href="https://brittanychiang.com" target="_blank">brittanychiang.com</a> built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
+</p>
+<p align="center">
+  Previous iterations:
+  <a href="https://github.com/bchiang7/v1" target="_blank">v1</a>,
+  <a href="https://github.com/bchiang7/v2" target="_blank">v2</a>,
+  <a href="https://github.com/bchiang7/bchiang7.github.io" target="_blank">v3</a>
+</p>
+<p align="center">
+  <a href="https://app.netlify.com/sites/brittanychiang/deploys" target="_blank">
+    <img src="https://api.netlify.com/api/v1/badges/1963b488-7b78-48c9-9e2d-6fb5e47ab3af/deploy-status" alt="Netlify Status" />
+  </a>
+</p>
 
-<div align="center">
-<h3><b>Screenshot</b></h3>
-<img src="./src/assets/screen.png" alt="" width="500px">
-</div>
+![demo](https://raw.githubusercontent.com/bchiang7/v4/main/src/images/demo.png)
 
-<!-- TABLE OF CONTENTS -->
+## 🚨 Forking this repo (please read!)
 
-# 📗 Table of Contents
+Many people have contacted me asking me if they can use this code for their own website, and the answer to that question is usually **yes, with attribution**.
 
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
-- [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [📝 License](#license)
+I value keeping my site open source, but as you all know, _**plagiarism is bad**_. It's always disheartening whenever I find that someone has copied my site without giving me credit. I spent a non-trivial amount of effort building and designing this iteration of my website, and I am proud of it! All I ask of you all is to not claim this effort as your own.
 
-<!-- PROJECT DESCRIPTION -->
+Please also note that I did not build this site with the intention of it being a starter theme, so if you have questions about implementation, please refer to the [Gatsby docs](https://www.gatsbyjs.org/docs/).
 
-## 📖 Portfolio-Refined <a name="about-project"></a>
+### TL;DR
 
-In this portfolio project, I've curated a captivating showcase of my achievements across four dynamic pages: Home, About, Contact, and Projects. Each page offers a unique perspective:
+Yes, you can fork this repo. Please give me proper credit by linking back to [brittanychiang.com](https://brittanychiang.com). Thanks!
 
-1. **Home**: A welcoming introduction to my portfolio's essence.
-2. **About**: Deep insights into my journey, experiences, and passions.
-3. **Contact**: A direct way to connect and engage with me.
-4. **Projects**: A showcase of my technical prowess and achievements.
+## 🛠 Installation & Set Up
 
-Together, these pages offer a comprehensive glimpse into my professional identity and expertise.
+1. Install the Gatsby CLI
 
-## 🛠 Built With <a name="built-with"></a>
+   ```sh
+   npm install -g gatsby-cli
+   ```
 
-## Tech Stack <a name="tech-stack"></a>
+2. Install and use the correct version of Node using [NVM](https://github.com/nvm-sh/nvm)
 
-<details>
-  <summary>Client</summary>
-  <b>This project only works client side right now.</b>
-  <ul>
-    <li>Nextjs</li>
-    <li>Tailwindcss</li>
-    <li>Shadcn/ui</li>
-    <li>Framer Motion</li>
-  </ul>
-</details>
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href=#>Server - It is Hosted on Netily</a></li>
-  </ul>
-</details>
+   ```sh
+   nvm install
+   ```
 
-<details>
-<summary>Database</summary>
-  <ul>
-    <li>Currently it doesn't use database</li>
-  </ul>
-</details>
+3. Install dependencies
 
-<!-- Features -->
+   ```sh
+   yarn
+   ```
 
-## Key Features <a name="key-features"></a>
+4. Start the development server
 
-- **Showcase developer achievements**
+   ```sh
+   npm start
+   ```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+## 🚀 Building and Running for Production
 
-<!-- LIVE DEMO -->
+1. Generate a full static production build
 
-## 🚀 Live Demo <a name="live-demo"></a>
+   ```sh
+   npm run build
+   ```
 
-- [Live Demo Link](https://abdussattar-70.github.io/Portfolio-Refined)
+1. Preview the site as it will appear once deployed
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+   ```sh
+   npm run serve
+   ```
 
-<!-- GETTING STARTED -->
+## 🎨 Color Reference
 
-## 💻 Getting Started <a name="getting-started"></a>
-
-To get a local copy up and running, follow these steps.
-
-## Prerequisites <a name="prerequisites"></a>
-
-- In order to run this project you need:
-
-### It would be best if you had some familiarity with `HTML`, `CSS`,`JS`, `React` and `Bootstrap`.
-
-- A Computer (MAC or PC)
-- code editor (VSCode,Atom etc...)
-- A browser (Chrome,Mozilla,Safari etc...)
-- Version Control System (Git and Github)
-
-# Setup <a name="setup"></a>
-
-Clone this repository to your desired folder:
-
-```bash
-       git clone https://github.com/AbdusSattar-70/Portfolio-Refined.git
-       cd Portfolio-Refined
-```
-
-# Install <a name="install"></a>
-
-Install this project with:
-
-```bash
-     npm install
-```
-
-# Run tests and check errors <a name="run-tests"></a>
-
-To run tests and check errors, run the following command:
-
-- To check Styelint error:-
-
-```bash
-   npx stylelint "\*_/_.{css,scss}"
-```
-
-- To check Eslint error:-
-
-```bash
-  npx eslint "**/*.{js,jsx}"
-```
-
-# Deployment <a name="triangular_flag_on_post-deployment"></a>
-
-You can deploy this project using:
-
-- Render Hosting server or GitHub pages
-
-```bash
-   npm install
-   npm run start
-```
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- AUTHORS -->
-
-## 👥 Authors <a name="authors"></a>
-
-## 👤 Abdus Sattar
-
-- GitHub: [AbdusSattar-70](https://github.com/AbdusSattar-70)
-- Twitter: [Abdus Sattar](https://twitter.com/Abdus_Sattar70)
-- LinkedIn: [Abdus Sattar](https://www.linkedin.com/in/abdus-sattar-a41a26215/)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FUTURE FEATURES -->
-
-## 🔭 Future Features <a name="future-features"></a>
-
-- **Web Responsiveness for all users**
-- **Add web accessibility**
-- **Add Login page**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- CONTRIBUTING -->
-
-## 🤝 Contributing <a name="contributing"></a>
-
-Everybody is welcome to suggest, changes,Contributions, issues, and feature request in this project.
-
-In order to do it, fork this repository, create a new branch and open a Pull Request from your branch.
-
-Feel free to check the [issues page](../../issues/).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- SUPPORT -->
-
-## ⭐️ Show your support <a name="support"></a>
-
-If you like this project, Please give me ⭐️ and you can use it following [MIT](./LICENSE) license.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- ACKNOWLEDGEMENTS -->
-
-## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-I would like to thank microverse for the opportunity to learn how to Code.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LICENSE -->
-
-## 📝 License <a name="license"></a>
-
-This project is under [MIT](./LICENSE) licensed.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+| Color          | Hex                                                                |
+| -------------- | ------------------------------------------------------------------ |
+| Navy           | ![#0a192f](https://via.placeholder.com/10/0a192f?text=+) `#0a192f` |
+| Light Navy     | ![#112240](https://via.placeholder.com/10/0a192f?text=+) `#112240` |
+| Lightest Navy  | ![#233554](https://via.placeholder.com/10/303C55?text=+) `#233554` |
+| Slate          | ![#8892b0](https://via.placeholder.com/10/8892b0?text=+) `#8892b0` |
+| Light Slate    | ![#a8b2d1](https://via.placeholder.com/10/a8b2d1?text=+) `#a8b2d1` |
+| Lightest Slate | ![#ccd6f6](https://via.placeholder.com/10/ccd6f6?text=+) `#ccd6f6` |
+| White          | ![#e6f1ff](https://via.placeholder.com/10/e6f1ff?text=+) `#e6f1ff` |
+| Green          | ![#64ffda](https://via.placeholder.com/10/64ffda?text=+) `#64ffda` |
