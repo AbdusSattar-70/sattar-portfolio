@@ -23,7 +23,7 @@ const StyledLinkWrapper = styled.div`
     margin: 20px auto;
     padding: 10px;
     font-family: var(--font-mono);
-    font-size: var(--fz-xxs);
+    font-size: 16px;
     line-height: var(--fz-lg);
     letter-spacing: 0.1em;
     writing-mode: vertical-rl;
@@ -38,7 +38,15 @@ const StyledLinkWrapper = styled.div`
 const Email = ({ isHome }) => (
   <Side isHome={isHome} orientation="right">
     <StyledLinkWrapper>
-      <a href={`mailto:${email}`}>{email}</a>
+      <a
+        className="email-link"
+        href="https://mail.google.com/mail/?view=cm&fs=1&to=a90.sattar@gmail.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Send an email to a90.sattar@gmail.com via Gmail"
+      >
+        {email}
+      </a>
     </StyledLinkWrapper>
   </Side>
 );

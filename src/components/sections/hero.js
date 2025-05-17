@@ -64,14 +64,12 @@ const Hero = () => {
   const three = <h3 className="big-heading">I build things for the web.</h3>;
   const four = (
     <p>
-        I’m a software engineer specializing in building (and occasionally designing) exceptional
-        digital experiences. Currently, I’m focused on building accessible, human-centered products
-        at{' '}
-      <a href="https://www.itransition.com/" target="_blank" rel="noreferrer">
-          Itransition
-      </a>
-        .
+    I’m a software engineer specializing in building (and occasionally designing) exceptional
+    digital experiences. Currently, I’m focused on developing accessible, human-centered products
+    and contributing to the training of AI models that generate realistic, state-of-the-art (SOTA), and accessible code at{' '}
+      <a href="https://www.outlier.ai/" target="_blank" rel="noopener noreferrer">Outlier.ai</a>.
     </p>
+
   );
   const five = (
     <a
